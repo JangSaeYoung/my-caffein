@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          작동을 확인 해봅니다. 
+          Test : Github Pages
         </p>
       </header>
     </div>
