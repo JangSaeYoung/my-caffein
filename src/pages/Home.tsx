@@ -1,13 +1,20 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
+import Navigation from '../components/Navigation';
+import CampCard from '../components/CampCard';
+import CommunityCard from '../components/CommunityCard';
+import Footer from '../components/Footer';
 
 const Home = () => {
     return (
     <div>
-        <Memo>홈 화면입니다.</Memo>
+        <Navigation />
+        <CampCard />
+        <Memo>베너자리입니다.</Memo>
+        <CommunityCard />
         <Link to="/CampDetail">캠프자세히보기</Link>
         <Link to="/CommunityDetail">커뮤니티자세히보기</Link>
+        <Footer />
     </div>
     );
 };
