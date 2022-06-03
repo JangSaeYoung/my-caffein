@@ -31,6 +31,7 @@ const Navigation = () => {
 export default Navigation;
 
 const NavigationBox = styled.div`
+position: absolute;
     width: 1438px;
     height: 560px;
     left: 0px;
@@ -70,6 +71,24 @@ const NavigationBox = styled.div`
         justify-content: space-between;
         padding: 16px 241px 16px 241px; 
         align-items: flex-end;
+    }
+
+    .slide-text{
+        position: absolute;
+        width: 278.84px;
+        height: 100.8px;
+        left: 238.18px;
+        top: 342.6px;
+
+    }
+
+    .slide-title{
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 65px;
+        color: #FFFFFF;
     }
 
     .img-style {

@@ -1,13 +1,15 @@
 export interface InCamp {
     id: number;
     name: string;
-    type: "popular" | "sale";
+    type: string;
     status?: "모집전" | "모집중" | "모집완로"; 
     field: string;
     skill: string;
     startDate: string;
     thumbnail: string;
+    title: string;
 }
+
 
 export interface InCommunity{
     id: number;
