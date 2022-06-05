@@ -11,14 +11,13 @@ interface InProps {
     camps: InCamp[];
 }
 
-
 const CampContainer= ( { title, camps }: InProps )=>{
     return (
     <Container>
         <div className="section-title">{title}</div>
         <div className="camp-cards">
             {camps.map((camp, index) => (
-                <CampCard key={index} camp={camp} name='name' />
+                <CampCard key={index} camp={camp} title={title} name={''}/>
             ))}
         </div>
     </Container>

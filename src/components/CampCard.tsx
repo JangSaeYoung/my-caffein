@@ -6,16 +6,15 @@ import { InCamp } from '../types/type';
 interface InProps {
     camp: InCamp;
     name: string;
-  }
+    title: string;
+}
 
-const CampCard = ({ camp, name } : InProps) => {
+const CampCard = ({camp, name, title}: InProps) => {
     return (
     <CardContainer>
         <div className="card-content">
-            {/* <div className="card-filed">{camp.field}</div> */}
-            <div className="card-filed">리엑트</div>
-
-            <div className="card-name">{camp.name}</div>
+            <div className="card-title">{camp.title}</div>
+            <div className="card-name">즐거워요</div>
             <div className="csrd-start-date">22년 6월 3일</div>
         </div>
     </CardContainer>
