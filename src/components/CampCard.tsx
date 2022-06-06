@@ -16,8 +16,6 @@ const CampCard = ({camp, field}: InProps) => {
                 field ? `${camp.field}/${camp.skill}` : camp.status
             }
             </div>
-        {/* <div className="camp-status">{camp.status}</div> */}
-
         <div className="camp-name">{camp.name}</div>
         <div className="camp-startDate">{camp.startDate}</div>
         </div>
