@@ -55,7 +55,7 @@ const CommuContainer = ({ commus  } : IncoProps) => {
         <div className="camp-cards">
         {
         commucards.map((commu) => (
-            <CommunityCard  commu={commu}   />
+            <CommunityCard  commu={commu} key={commu.id}  />
         ))
         }
 
