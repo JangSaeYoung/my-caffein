@@ -1,0 +1,63 @@
+ [
+    {
+      "id": 0,
+      "name": "직접 해보는 페이스북 마케팅 실무",
+      "type": "Popular",
+      "status": "모집중",
+      "startDate": "2월 28일",
+      "thumbnail": "",
+      "field": "" ,
+      "skill": "" 
+    },
+    {
+      "id": 1,
+      "name": "React 실무 프로젝트 역량 업그레이드",
+      "type": "Popular",
+      "status": "모집중",
+      "startDate": "1월 9일",
+      "thumbnail": "",
+      "field": "" ,
+      "skill": ""
+    },
+    {
+      "id": 2,
+      "name": "개발자 없이 SQL로 데이터 출력하고 대시보드 만들기",
+      "type": "Popular",
+      "status": "모집중",
+      "startDate": "2월 13일",
+      "thumbnail": "",
+      "field": "" ,
+      "skill": ""
+    },
+    {
+      "id": 3,
+      "name": "쉽지만 강력한 엑셀로 데이터 분석과 업무 자동화까지",
+      "type": "Popular",
+      "status": "모집중",
+      "startDate": "2월 20일",
+      "thumbnail": "",
+      "field": "" ,
+      "skill": ""
+    },
+    {
+      "id": 4,
+      "name": "일 잘하는 마케터를 위한 파이썬 기초 분석 패키지",
+      "type": "Popular",
+      "status": "모집중",
+      "startDate": "6월 11일",
+      "thumbnail": "",
+      "field": "" ,
+      "skill": ""
+    },
+    {
+      "id": 5,
+      "name": "오늘 당장 써먹는 CRM 마케팅 feat.Braze",
+      "type": "Popular",
+      "status": "모집중",
+      "startDate": "6월 28일",
+      "thumbnail": "",
+      "field": "",
+      "skill": ""
+    }
+]
+
