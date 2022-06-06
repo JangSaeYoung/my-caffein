@@ -27,17 +27,17 @@ export default CampCard;
 
 const CardContainer = styled.div`
 
-position: relative;
     height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: 8px;
     background-color: black;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-bottom: 8px;
+    
 
     .camp-content {
     padding: 20px;
@@ -51,8 +51,7 @@ position: relative;
     width: 192px;
     height: 41.02px;
     }
-` 
-;
+` ;
 
 
 
