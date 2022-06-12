@@ -19,12 +19,14 @@ export default Navigation;
 const NavigationBox = styled.div`
     background: #7471FF;
     height: 30px;
-    padding: 10px 10px;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
 
     .navbox {
         display: flex;
         justify-content: space-between;
-
+        margin: 0 15px;
     }
 
     .nav-logo {
