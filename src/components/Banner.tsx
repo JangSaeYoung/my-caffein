@@ -12,11 +12,6 @@ const Banner = () => {
 export default Banner;
 
 const BannerContainer = styled.div`
-    position: absolute;
-    width: 960px;
-    height: 100px;
-    left: 240px;
-    top: 1375px;
     text-align: center;
     background: #7471FF;
 

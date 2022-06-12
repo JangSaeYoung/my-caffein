@@ -26,7 +26,7 @@ const CampCard = ({camp, field}: InProps) => {
 export default CampCard;
 
 const CardContainer = styled.div`
-
+/* 
     height: 280px;
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@ const CardContainer = styled.div`
     padding-bottom: 8px;
     width: 192px;
     height: 41.02px;
-    }
+    } */
 ` ;
 
 

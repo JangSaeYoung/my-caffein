@@ -32,11 +32,8 @@ export default CommunityCard;
 
 const CardContainer = styled.div`
 
-/* White */
 
-/* Gray4 */
-
-border: 1px solid #CCCCCC;
+/* border: 1px solid #CCCCCC;
 border-radius: 10px;
 
 
@@ -49,7 +46,6 @@ position: relative;
   justify-content: flex-start;
 
   .comu-content {
-    /* padding: 20px; */
     padding: 16px;
     padding-bottom: 0px;
     z-index: 1;
@@ -97,7 +93,6 @@ font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 16px;
-/* or 114% */
 
 letter-spacing: -0.01em;
   }
@@ -129,7 +124,7 @@ font-weight: 400;
 font-size: 12px;
 line-height: 14px;
 color: #24DBAF;
-}
+} */
 
 
 ` 

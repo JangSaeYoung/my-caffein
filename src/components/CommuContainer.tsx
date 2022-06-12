@@ -69,7 +69,7 @@ export default CommuContainer;
 
 
 const Container = styled.div`
-  padding: 0px 16px;
+  /* padding: 0px 16px;
 
   display: flex;
   flex-direction: column;
@@ -94,5 +94,5 @@ const Container = styled.div`
       justify-content: space-between;
       gap: 16px;
     }
-}
+} */
 `

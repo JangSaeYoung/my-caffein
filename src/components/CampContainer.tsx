@@ -131,7 +131,9 @@ export default CampContainer;
 
 
 const Container = styled.div`
-  padding: 0px 16px;
+
+
+  /* padding: 0px 16px;
 
   display: flex;
   flex-direction: column;
@@ -140,7 +142,6 @@ const Container = styled.div`
     margin-top: 624px;
     margin-left: 240px;
     margin-right: 240px;
-    /* background-color: red; */
 
   .section-title {
       margin-bottom: 8px;
@@ -156,6 +157,6 @@ const Container = styled.div`
       display: flex;
       justify-content: space-between;
       gap: 16px;
-    }
-}
+    } 
+}*/
 `
