@@ -17,13 +17,17 @@ const Slide = () => {
 export default Slide;
 
 const Slidebox = styled.div`
-    /* width: 940px;
-    display: flex;
-    justify-content: center;
-    margin: 104px 243px 56px 
-*/
+  
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 20px;
 
-
+    .slide-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        
+    }
 
         .img-style {
         width: 200px;
