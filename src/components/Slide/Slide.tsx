@@ -8,7 +8,7 @@ const Slide = () => {
         <Slidebox>
                 <div className="slide-container">
                     <div className="slide-title">{`개발은 \n카페인과 함께`}</div>               
-                    <img className="img-style" src={require("../assets/imges/sandol.png")} />
+                    <img className="img-style" src={require("../../assets/imges/sandol.png")} />
                 </div>
         </Slidebox>
     );

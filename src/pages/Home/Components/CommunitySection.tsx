@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import CommunityCard from './CommunityCard';
+import CommunityCard from '../../../components/CommunityCard/CommunityCard';
 import styled from 'styled-components';
-import { InCamp, InCommunity } from '../types/type'
+import { InCamp, InCommunity } from '../../../types/type'
 import React, {useState, useEffect} from 'react';
 
 
@@ -14,7 +14,7 @@ interface IncoProps {
 }
 
 
-const CommuContainer = ({ commus  } : IncoProps) => {
+const CommunitySection = ({ commus  } : IncoProps) => {
 
 
     const commucards = [
@@ -64,7 +64,7 @@ const CommuContainer = ({ commus  } : IncoProps) => {
     );
 };
 
-export default CommuContainer;
+export default CommunitySection;
 
 
 

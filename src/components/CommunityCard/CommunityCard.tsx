@@ -1,6 +1,6 @@
 
 import styled from 'styled-components';
-import { InCommunity } from '../types/type';
+import { InCommunity } from '../../types/type';
 import { Link } from "react-router-dom";
 
 

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import CampCard from './CampCard';
-import { InCamp  } from '../types/type'
+import CampCard from '../../../components/CampCard/CampCard';
+import { InCamp  } from '../../../types/type'
 import React, {useState, useEffect} from 'react';
 
 // 캠프 카드 들어가는 구역
@@ -14,7 +14,7 @@ interface InProps {
 }
 
 
-const CampContainer= ( { title, camps }: InProps )=>{
+const CampSection= ( { title, camps }: InProps )=>{
 
         const cards = [
             {
@@ -126,7 +126,7 @@ const CampContainer= ( { title, camps }: InProps )=>{
 );
     };
 
-export default CampContainer;
+export default CampSection;
 
 
 

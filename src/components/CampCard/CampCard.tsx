@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { InCamp } from '../types/type';
+import { InCamp } from '../../types/type';
 
 
 interface InProps {
