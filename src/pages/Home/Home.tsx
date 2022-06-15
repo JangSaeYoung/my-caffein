@@ -8,10 +8,12 @@ import Banner from '../../components/Banner/Banner';
 import CampContainer from './Components/CampSection';
 import Slide from '../../components/Slide/Slide';
 import Header from './Components/HeaderSection';
-import CampSection from './Components/CampSection';
-import CommunitySection from './Components/CommunitySection';
-import HeaderSection from './Components/HeaderSection';
 
+import {
+    CampSection,
+    HeaderSection,
+    CommunitySection,
+  } from "./Components";
 
 
 const Home = () => {
