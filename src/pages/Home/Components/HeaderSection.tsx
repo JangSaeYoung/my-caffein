@@ -6,17 +6,17 @@ import Slide from "../../../components/Slide/Slide";
 
 const HeaderSection = () => {
   return (
-    <HeaderBox>
+    <Container>
       <Navigation />
       <Slide />
-    </HeaderBox>
+    </Container>
   );
 };
 
 export default HeaderSection;
 
-const HeaderBox = styled.div`
-  background-color: blue;
+const Container = styled.div`
+  background-color: #7471ff;
   box-sizing: border-box;
   width: 100vw;
   height: 560px;

@@ -4,33 +4,50 @@ import styled from "styled-components";
 
 const Slide = () => {
   return (
-    <Slidebox>
+    <Container>
       <div className="slide-container">
-        <div className="slide-title">{`개발은 \n카페인과 함께`}</div>
+        <div className="slide-title">{`개발은 \n산돌이와 함께`}</div>
         <img
-          className="img-style"
+          className="slide-img"
           src={require("../../assets/imges/sandol.png")}
         />
       </div>
-    </Slidebox>
+    </Container>
   );
 };
 
 export default Slide;
 
-const Slidebox = styled.div`
+const Container = styled.div`
   box-sizing: border-box;
   padding-top: 100px;
   padding-bottom: 20px;
+  margin: 0 50px;
 
   .slide-container {
     display: flex;
-    justify-content: center;
     align-items: flex-end;
+    justify-content: space-between;
+    max-width: 960px;
+    height: 350px;
   }
 
-  .img-style {
-    width: 200px;
-    height: 200px;
+  .slide-title {
+    flex: 1;
+    white-space: pre-line;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .slide-line {
+    width: 5px;
+    color: whitesmoke;
+  }
+
+  .slide-img {
+    width: 450px;
+    height: 350px;
   }
 `;
