@@ -3,6 +3,7 @@ import styled from "styled-components";
 import React, { useState, useEffect } from "react";
 import { Banner, Footer } from "components";
 import { CampSection, HeaderSection, CommunitySection } from "./Components";
+import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
   return (
