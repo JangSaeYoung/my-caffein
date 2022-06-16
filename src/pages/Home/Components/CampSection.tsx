@@ -3,6 +3,7 @@ import styled from "styled-components";
 import CampCard from "../../../components/CampCard/CampCard";
 import { InCamp } from "../../../types/type";
 import React, { useState, useEffect } from "react";
+import fonts from "styles/fonts";
 
 // 캠프 카드 들어가는 구역
 
@@ -119,30 +120,14 @@ const CampSection = ({ title, camps }: InProps) => {
 export default CampSection;
 
 const Container = styled.div`
-  /* padding: 0px 16px;
-
-  display: flex;
-  flex-direction: column;
-    width: 960px;
-    height: 323px;
-    margin-top: 624px;
-    margin-left: 240px;
-    margin-right: 240px;
-
   .section-title {
-      margin-bottom: 8px;
-      font-weight: bold;
+    ${fonts.H1};
+    padding-bottom: 8px;
   }
 
-    
-    .camp-cards {
-    a {
-      flex: 1;
-    }
-    @media (min-width: 680px) {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-    } 
-}*/
+  .camp-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
 `;
