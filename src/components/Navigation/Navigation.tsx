@@ -33,7 +33,7 @@ const NavigationBox = styled.div`
   .navbox {
     display: flex;
     justify-content: space-between;
-    margin: 0 15px;
+    margin: 0 50px;
   }
 
   .nav-logo {
