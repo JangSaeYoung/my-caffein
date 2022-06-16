@@ -1,39 +1,33 @@
-
-import styled from 'styled-components';
-import { InCommunity } from '../../types/type';
+import styled from "styled-components";
+import { InCommunity } from "../../types/type";
 import { Link } from "react-router-dom";
 
-
 interface IncoProps {
-    commu:  InCommunity;
+  commu: InCommunity;
 }
 
-
-const CommunityCard = ({commu}:IncoProps) => {
-    return (
+const CommunityCard = ({ commu }: IncoProps) => {
+  return (
     <CardContainer>
-         <div className="comu-content">
-            <div className="commu-tag">{commu.tags}</div>
-            <div className="commu-title">{commu.title}</div>
-            <div className="commu-questions">{commu.questions}</div>
-            <div className="commentBox">
-           <div className="commu-comments">{commu.comments}</div>
-           </div>
+      <div className="comu-content">
+        <div className="commu-tag">{commu.tags}</div>
+        <div className="commu-title">{commu.title}</div>
+        <div className="commu-questions">{commu.questions}</div>
+        <div className="commentBox">
+          <div className="commu-comments">{commu.comments}</div>
         </div>
-        <Link to="/CommunityDetail">
+      </div>
+      <Link to="/CommunityDetail">
         <div className="plusBtn">+더보기</div>
-        </Link>
+      </Link>
     </CardContainer>
-    );
+  );
 };
 
 export default CommunityCard;
 
-
 const CardContainer = styled.div`
-
-
-/* border: 1px solid #CCCCCC;
+  /* border: 1px solid #CCCCCC;
 border-radius: 10px;
 
 
@@ -125,7 +119,4 @@ font-size: 12px;
 line-height: 14px;
 color: #24DBAF;
 } */
-
-
-` 
-;
+`;

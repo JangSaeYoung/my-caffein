@@ -1,72 +1,61 @@
-import { Link } from 'react-router-dom';
-import CommunityCard from '../../../components/CommunityCard/CommunityCard';
-import styled from 'styled-components';
-import { InCamp, InCommunity } from '../../../types/type'
-import React, {useState, useEffect} from 'react';
-
-
+import { Link } from "react-router-dom";
+import CommunityCard from "../../../components/CommunityCard/CommunityCard";
+import styled from "styled-components";
+import { InCamp, InCommunity } from "../../../types/type";
+import React, { useState, useEffect } from "react";
 
 // 커뮤니티 카드 들어가는 공간
 
 interface IncoProps {
-    title: string,
-    commus: InCommunity[];
+  title: string;
+  commus: InCommunity[];
 }
 
+const CommunitySection = ({ commus }: IncoProps) => {
+  const commucards = [
+    {
+      id: 0,
+      tags: "조회수 TOP",
+      title: "합격 메일 답장 어떻게 할까요?",
+      questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
+      comments: "구글링해보세요.",
+    },
+    {
+      id: 1,
+      tags: "조회수 TOP",
+      title: "합격 메일 답장 어떻게 할까요?",
+      questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
+      comments: "스티븐잡스가 직접 본다고 합니다!",
+    },
+    {
+      id: 2,
+      tags: "취업고민",
+      title: "합격 메일 답장 어떻게 할까요?",
+      questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
+      comments: "스터디하는 분들과 이야기 나눠봤나요?",
+    },
+    {
+      id: 3,
+      tags: "취업 고민",
+      title: "합격 메일 답장 어떻게 할까요?",
+      questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
+      comments: "공식문서를 보세요.",
+    },
+  ];
 
-const CommunitySection = ({ commus  } : IncoProps) => {
-
-
-    const commucards = [
-        {
-            "id": 0,
-            "tags": "조회수 TOP",
-            "title": "합격 메일 답장 어떻게 할까요?",
-            "questions": '고칠 부분이 있는지 봐주시면 감사하겠습니다!',
-            "comments" : "구글링해보세요."
-        },
-          {
-            "id": 1,
-            "tags": "조회수 TOP",
-            "title": "합격 메일 답장 어떻게 할까요?",
-            "questions": '고칠 부분이 있는지 봐주시면 감사하겠습니다!',
-            "comments" : "스티븐잡스가 직접 본다고 합니다!"
-          },
-          {
-            "id": 2,
-            "tags": "취업고민",
-            "title": "합격 메일 답장 어떻게 할까요?",
-            "questions": '고칠 부분이 있는지 봐주시면 감사하겠습니다!',
-            "comments" : "스터디하는 분들과 이야기 나눠봤나요?"
-          },
-          {
-            "id": 3,
-            "tags": "취업 고민",
-            "title": "합격 메일 답장 어떻게 할까요?",
-            "questions": '고칠 부분이 있는지 봐주시면 감사하겠습니다!',
-            "comments" : "공식문서를 보세요."
-          },
-    ];
-
-
-    return (
-        <Container>
-        <div className="section-title">커뮤니티</div>
-        <div className="camp-cards">
-        {
-        commucards.map((commu) => (
-            <CommunityCard  commu={commu} key={commu.id}  />
-        ))
-        }
-
-        </div>
-        </Container>
-    );
+  return (
+    <Container>
+      <div className="section-title">커뮤니티</div>
+      <div className="camp-cards">
+        {commucards.map(commu => (
+          <CommunityCard commu={commu} key={commu.id} />
+        ))}
+      </div>
+    </Container>
+  );
 };
 
 export default CommunitySection;
-
-
 
 const Container = styled.div`
   /* padding: 0px 16px;
@@ -95,4 +84,4 @@ const Container = styled.div`
       gap: 16px;
     }
 } */
-`
+`;
