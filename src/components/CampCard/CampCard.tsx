@@ -36,7 +36,7 @@ const Container = styled.div`
   border-radius: 10px;
 
   .camp-content {
-    z-index: 1;
+    z-index: 0;
     color: white;
     padding: 16px;
   }
