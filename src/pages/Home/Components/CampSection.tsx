@@ -122,7 +122,8 @@ export default CampSection;
 const Container = styled.div`
   .section-title {
     ${fonts.H1};
-    padding-bottom: 8px;
+    padding-top: 20px;
+    padding-bottom: 4px;
   }
 
   .camp-cards {
