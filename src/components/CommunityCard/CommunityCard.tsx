@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { InCommunity } from "../../types/type";
 import { Link } from "react-router-dom";
 import fonts from "styles/fonts";
+import Comments from "../Comments/index";
 
 interface IncoProps {
   commu: InCommunity;
@@ -14,9 +15,9 @@ const CommunityCard = ({ commu }: IncoProps) => {
         <div className="tag">{commu.tags}</div>
         <div className="title">{commu.title}</div>
         <div className="questions">{commu.questions}</div>
-        <div className="commentBox">
-          <div className="commu-comments">{commu.comments}</div>
-        </div>
+      </div>
+      <div className="commets">
+        <Comments />
       </div>
       <Link to="/CommunityDetail">
         <div className="plusBtn">+더보기</div>
@@ -55,5 +56,10 @@ const Container = styled.div`
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
+  }
+
+  .commets {
+    color: black;
+    background-color: red;
   }
 `;
