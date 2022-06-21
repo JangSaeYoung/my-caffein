@@ -12,12 +12,6 @@ export interface InCamp {
 }
 
 export interface InCommunity {
-  // id: number;
-  // tags: string[];
-  // title: string; //제목
-  // questions: string; //질문
-  // comments: IComment[];
-
   id: number;
   tags: string;
   title: string;
