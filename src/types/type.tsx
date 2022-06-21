@@ -16,6 +16,7 @@ export interface InCommunity {
   tags: string[];
   title: string;
   questions: string;
+  content: string;
   comments: IComment[];
 }
 

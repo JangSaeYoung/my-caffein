@@ -18,6 +18,7 @@ const CommunitySection = ({ commus }: IncoProps) => {
       tags: [],
       title: "합격 메일 답장 어떻게 할까요?",
       questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
+      content: "",
       comments: [],
     },
     {
@@ -25,6 +26,7 @@ const CommunitySection = ({ commus }: IncoProps) => {
       tags: [],
       title: "합격 메일 답장 어떻게 할까요?",
       questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
+      content: "",
       comments: [],
     },
     {
@@ -32,6 +34,7 @@ const CommunitySection = ({ commus }: IncoProps) => {
       tags: [],
       title: "합격 메일 답장 어떻게 할까요?",
       questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
+      content: "",
       comments: [],
     },
     {
@@ -39,6 +42,7 @@ const CommunitySection = ({ commus }: IncoProps) => {
       tags: [],
       title: "합격 메일 답장 어떻게 할까요?",
       questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
+      content: "",
       comments: [],
     },
   ];
