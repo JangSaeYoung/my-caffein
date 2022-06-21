@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import { InCommunity } from "../../types/type";
 import { Link } from "react-router-dom";
 import fonts from "styles/fonts";
 import Comments from "../Comments/index";
+import { InCommunity } from "types/type";
+import Tags from "components/Tags";
 
 interface IncoProps {
   commu: InCommunity;
@@ -12,7 +13,7 @@ const CommunityCard = ({ commu }: IncoProps) => {
   return (
     <Container>
       <div className="content">
-        <div className="tag">{commu.tags}</div>
+        <Tags tags={commu.tags} />
         <div className="title">{commu.title}</div>
         <div className="questions">{commu.questions}</div>
       </div>

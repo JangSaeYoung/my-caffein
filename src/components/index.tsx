@@ -4,3 +4,4 @@ export { default as Footer } from "./Footer/Footer";
 export { default as Banner } from "./Banner/Banner";
 export { default as CommunityCard } from "./CommunityCard/CommunityCard";
 export { default as Comments } from "./Comments";
+export { default as Tags } from "./Tags";

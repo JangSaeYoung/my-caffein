@@ -15,28 +15,28 @@ const CommunitySection = ({ commus }: IncoProps) => {
   const commucards = [
     {
       id: 0,
-      tags: "조회수 TOP",
+      tags: [],
       title: "합격 메일 답장 어떻게 할까요?",
       questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
       comments: [],
     },
     {
       id: 1,
-      tags: "조회수 TOP",
+      tags: [],
       title: "합격 메일 답장 어떻게 할까요?",
       questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
       comments: [],
     },
     {
       id: 2,
-      tags: "취업고민",
+      tags: [],
       title: "합격 메일 답장 어떻게 할까요?",
       questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
       comments: [],
     },
     {
       id: 3,
-      tags: "취업 고민",
+      tags: [],
       title: "합격 메일 답장 어떻게 할까요?",
       questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
       comments: [],

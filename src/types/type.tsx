@@ -13,7 +13,7 @@ export interface InCamp {
 
 export interface InCommunity {
   id: number;
-  tags: string;
+  tags: string[];
   title: string;
   questions: string;
   comments: IComment[];
