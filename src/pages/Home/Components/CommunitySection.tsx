@@ -11,48 +11,13 @@ interface IncoProps {
   commus: InCommunity[];
 }
 
-const CommunitySection = ({ commus }: IncoProps) => {
-  const commucards = [
-    {
-      id: 0,
-      tags: [],
-      title: "합격 메일 답장 어떻게 할까요?",
-      questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
-      content: "",
-      comments: [],
-    },
-    {
-      id: 1,
-      tags: [],
-      title: "합격 메일 답장 어떻게 할까요?",
-      questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
-      content: "",
-      comments: [],
-    },
-    {
-      id: 2,
-      tags: [],
-      title: "합격 메일 답장 어떻게 할까요?",
-      questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
-      content: "",
-      comments: [],
-    },
-    {
-      id: 3,
-      tags: [],
-      title: "합격 메일 답장 어떻게 할까요?",
-      questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
-      content: "",
-      comments: [],
-    },
-  ];
-
+const CommunitySection = ({ title, commus }: IncoProps) => {
   return (
     <Container>
-      <div className="section-title">커뮤니티</div>
+      <div className="section-title">{title}</div>
       <div className="camp-cards">
-        {commucards.map(commu => (
-          <CommunityCard commu={commu} key={commu.id} />
+        {commus.map(community => (
+          <CommunityCard commu={community} key={community.id} />
         ))}
       </div>
     </Container>
