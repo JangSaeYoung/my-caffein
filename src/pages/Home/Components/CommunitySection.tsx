@@ -18,28 +18,28 @@ const CommunitySection = ({ commus }: IncoProps) => {
       tags: "조회수 TOP",
       title: "합격 메일 답장 어떻게 할까요?",
       questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
-      comments: "구글링해보세요.",
+      comments: [],
     },
     {
       id: 1,
       tags: "조회수 TOP",
       title: "합격 메일 답장 어떻게 할까요?",
       questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
-      comments: "스티븐잡스가 직접 본다고 합니다!",
+      comments: [],
     },
     {
       id: 2,
       tags: "취업고민",
       title: "합격 메일 답장 어떻게 할까요?",
       questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
-      comments: "스터디하는 분들과 이야기 나눠봤나요?",
+      comments: [],
     },
     {
       id: 3,
       tags: "취업 고민",
       title: "합격 메일 답장 어떻게 할까요?",
       questions: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
-      comments: "공식문서를 보세요.",
+      comments: [],
     },
   ];
 

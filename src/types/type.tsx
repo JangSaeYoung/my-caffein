@@ -16,7 +16,7 @@ export interface InCommunity {
   tags: string;
   title: string;
   questions: string;
-  comments: string;
+  comments: IComment[];
 }
 
 export interface IComment {
