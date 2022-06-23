@@ -13,13 +13,11 @@ const community: InCommunity = {
   content: "고칠 부분이 있는지 봐주시면 감사하겠습니다!",
   comments: [
     {
-      id: 0,
       profile: "https://cdn.comento.kr/images/pt/tmp/prefix_44UsYDVNuM.jpg",
       content: "와우",
       nickname: "멘토1234",
     },
     {
-      id: 1,
       profile: "https://cdn.comento.kr/images/pt/tmp/prefix_44UsYDVNuM.jpg",
       content: "와우",
       nickname: "멘토1234",
@@ -29,7 +27,6 @@ const community: InCommunity = {
 };
 
 const campMock: InCamp = {
-  id: 0,
   name: "업무 단순화 & 자동화로 엑셀을 실무에 더 적극 활용하기",
   type: "popular",
   status: "",
@@ -37,6 +34,7 @@ const campMock: InCamp = {
   skill: "",
   startDate: "",
   thumbnail: "",
+  id: 0,
 };
 
 const Home = () => {
@@ -49,6 +47,8 @@ const Home = () => {
     setPopularCamps([campMock, campMock, campMock, campMock]);
     setSaleCamps([campMock, campMock, campMock, campMock]);
   }, []);
+
+  console.log("여기", communities);
 
   return (
     <Container>

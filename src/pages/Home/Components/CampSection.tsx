@@ -17,14 +17,14 @@ const CampSection = ({ title, camps }: InProps) => {
     <Container>
       <div className="section-title">인기 부트 캠프</div>
       <div className="camp-cards">
-        {camps.map(camp => (
-          <CampCard camp={camp} key={camp.id} field={false} />
+        {camps.map((camp, index) => (
+          <CampCard camp={camp} key={index} field={false} />
         ))}
       </div>
       <div className="section-title">특가 할인 캠프</div>
       <div className="camp-cards">
-        {camps.map(camp => (
-          <CampCard camp={camp} key={camp.id} field={true} />
+        {camps.map((camp, index) => (
+          <CampCard camp={camp} key={index} field={true} />
         ))}
       </div>
     </Container>

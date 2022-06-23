@@ -21,7 +21,6 @@ export interface InCommunity {
 }
 
 export interface IComment {
-  id: number;
   profile: string;
   nickname: string;
   content: string;

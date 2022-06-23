@@ -19,7 +19,7 @@ const CommunityCard = ({ commu }: IncoProps) => {
         <div className="questions">{commu.questions}</div>
       </div>
       <div className="commets">
-        <Comments comments={[]} />
+        <Comments comments={commu.comments} />
       </div>
       <Link to="/CommunityDetail">
         <div className="plusBtn">+더보기</div>

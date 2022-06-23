@@ -13,12 +13,14 @@ interface IncoProps {
 }
 
 const CommunitySection = ({ title, commus }: IncoProps) => {
+  console.log(commus);
   return (
     <Container>
+      <div className="container-title">커뮤니티</div>
       <div className="title">{title}</div>
       <div className="cards">
-        {commus.map(community => (
-          <CommunityCard commu={community} key={community.id} />
+        {commus.map((community, index) => (
+          <CommunityCard commu={community} key={index} />
         ))}
       </div>
     </Container>
@@ -28,10 +30,15 @@ const CommunitySection = ({ title, commus }: IncoProps) => {
 export default CommunitySection;
 
 const Container = styled.div`
+  .container-title {
+    ${fonts.H1};
+    padding-top: 20px;
+    padding-bottom: 4px;
+  }
+
   .title {
     font-size: 16px;
     font-weight: 700px;
-    line-height: 18px;
     padding-top: 20px;
     padding-bottom: 4px;
   }

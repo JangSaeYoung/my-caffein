@@ -1,18 +1,39 @@
 import styled from "styled-components";
+import fonts from "styles/fonts";
 import { IComment } from "types/type";
 
-const Comment = ({ comment }: { comment: IComment }) => (
+const Comment = ({ comments }: { comments: IComment }) => (
   <Container>
+    <img src="{comments.profile}" alt="" />
     <div>
-      <img src="{comment.profile}" alt="" />
-    </div>
-    <div>
-      <div className="comment-nickname">{comment.nickname}</div>
-      <div className="comment-content">{comment.content}</div>
+      <div className="comment-nickname">{comments.nickname}</div>
+      <div className="comment-content">{comments.content}</div>
     </div>
   </Container>
 );
 
-export default Comment;
+const Container = styled.div`
+  display: flex;
+  gap: 4px;
+  padding-bottom: 16px;
+  background-color: red;
 
-const Container = styled.div``;
+  .comment-nickname {
+    ${fonts.Body2}
+    font-weight: bold;
+    padding-bottom: 4px;
+  }
+  .comment-content {
+    ${fonts.Caption}
+  }
+
+  img {
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+  }
+`;
+
+export default Comment;
