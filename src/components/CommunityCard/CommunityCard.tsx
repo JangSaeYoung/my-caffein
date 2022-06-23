@@ -15,6 +15,7 @@ const CommunityCard = ({ commu }: IncoProps) => {
       <div className="content">
         <Tags tags={commu.tags} />
         <div className="title">{commu.title}</div>
+        <div className="content">{commu.content}</div>
         <div className="questions">{commu.questions}</div>
       </div>
       <div className="commets">
