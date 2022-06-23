@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Banner, Footer } from "components";
 import { CampSection, HeaderSection, CommunitySection } from "./Components";
 import { useMediaQuery } from "react-responsive";
-import { InCommunity } from "types/type";
+import { InCommunity, InCamp } from "types/type";
 
 const community: InCommunity = {
   id: 0,
@@ -28,18 +28,33 @@ const community: InCommunity = {
   questions: "",
 };
 
+const campMock: InCamp = {
+  id: 0,
+  name: "업무 단순화 & 자동화로 엑셀을 실무에 더 적극 활용하기",
+  type: "popular",
+  status: "",
+  field: "",
+  skill: "",
+  startDate: "",
+  thumbnail: "",
+};
+
 const Home = () => {
   const [communities, setCommunities] = useState<InCommunity[]>([]);
+  const [popularCamps, setPopularCamps] = useState<InCamp[]>([]);
+  const [saleCamps, setSaleCamps] = useState<InCamp[]>([]);
 
   useEffect(() => {
     setCommunities([community, community, community, community]);
+    setPopularCamps([campMock, campMock, campMock, campMock]);
+    setSaleCamps([campMock, campMock, campMock, campMock]);
   }, []);
 
   return (
     <Container>
       <HeaderSection />
       <MainContainer>
-        <CampSection title={""} camps={[]} />
+        <CampSection title={""} camps={popularCamps} />
         <Banner />
         <CommunitySection title={""} commus={communities} />
       </MainContainer>
